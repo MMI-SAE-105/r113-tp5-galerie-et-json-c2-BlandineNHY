@@ -8,14 +8,20 @@
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body  x-data="{imageAfficher: null,}"></body>>
-    <h1>Galerie</h1>
+    <h1>Galerie Des Plus Beaux Chats Sur Cette Terre</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, repudiandae fugit minus laudantium in eveniet
         reprehenderit delectus blanditiis doloremque ad eius impedit voluptatibus perferendis explicabo odit illo quibusdam
         totam nisi?</p>
-        <img src="https://picsum.photos/id/236/40/60" alt="miniature chiot"
-            @click="imageAfficher = 'https://picsum.photos/id/236/200/300'">
-        <img src="https://picsum.photos/id/237/40/60" alt="miniature chiot"
-            @click="imageAfficher = 'https://picsum.photos/id/237/200/300'">
+        <img class="img" src="https://risibank.fr/cache/medias/0/26/2604/260446/full.png" alt="chat potter"
+            @click="imageAfficher = 'https://risibank.fr/cache/medias/0/26/2604/260446/full.png'">
+        <img class="img" src="https://risibank.fr/cache/medias/0/27/2735/273560/full.png" alt="chat qui souris"
+            @click="imageAfficher = 'https://risibank.fr/cache/medias/0/27/2735/273560/full.png'">
+         <img class="img" src="https://i.pinimg.com/236x/45/f4/52/45f452315f2e9f4ee7fc981a52a7943b.jpg" alt="chat homme"
+            @click="imageAfficher = 'https://i.pinimg.com/236x/45/f4/52/45f452315f2e9f4ee7fc981a52a7943b.jpg'">
+        <img class="img" src="https://wonder-day.com/wp-content/uploads/2022/03/wonder-day-avatar-memes-cats-33.jpg" alt="chat stock"
+            @click="imageAfficher = 'https://wonder-day.com/wp-content/uploads/2022/03/wonder-day-avatar-memes-cats-33.jpg'">
+        <img class="img" src="https://pbs.twimg.com/media/Eha4cJgWoAEohLT.jpg" alt="chat homme"
+            @click="imageAfficher = 'https://pbs.twimg.com/media/Eha4cJgWoAEohLT.jpg'">
 
     <div class="overlay" x-show="imageAfficher" @click="imageAfficher=null">
         <figure>
